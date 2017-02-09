@@ -1,0 +1,34 @@
+{
+    "name": "bsmrk/yii-webapp",
+    "description": "yii base app",
+    "keywords": ["yii", "webapp"],
+    "type": "project",
+    "license": "BSD-3-Clause",
+    
+    "authors": [
+        {
+            "name": "Marko Bischof",
+            "email": "marko.bischof@gmail.com",
+            "homepage": "https://github.com/mbischof",
+            "role": "Development"
+        }
+    ],
+    
+    "repositories": [
+        { "type": "vcs", "url": "https://github.com/bsmrk/yii-framework" }
+    ],
+            
+    "require": {
+        "php": ">=5.3.3",
+        "bsmrk/yii-framework": "dev-master"
+    },
+    
+    "scripts": {
+        "post-create-project-cmd": [
+            "mkdir runtime",
+            "mkdir htdocs/assets",
+            "chmod 0777 runtime/",
+            "chmod 0777 htdocs/assets/"
+        ]
+    }
+}

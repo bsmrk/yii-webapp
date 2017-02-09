@@ -1,0 +1,7 @@
+htdocs/assets/
+runtime/
+vendor/
+
+composer.lock
+
+nbproject/
